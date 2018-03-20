@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tomate Time</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+</head>
+<body onload="init();">
+    <div class="main">
+        <!-- <h1>Tomate Time</h1> -->
+        <!-- <p>Be productive</p> -->
+
+        <!-- Container for the main chrono component -->
+        <div class="chrono-container">
+            <!-- Title (indicate if you should work or pause) -->
+            <h3 class="chrono-title">Work Time</h3>
+            
+            <!-- Display item -->
+            <p id="chrono">24:05</p>
+            
+            <!-- Shows where you are in your pomodoroes -->
+            <div class="chrono-periods">
+                <p class="chrono-align">
+                    <span class="chrono-mark chrono-mark-done">#</span>
+                    <span class="chrono-mark">0</span>
+                    <span class="chrono-mark">0</span>
+                    <span class="chrono-mark">0</span>
+                    <span class="chrono-mark">0</span>
+                </p>
+            </div>
+
+            <!-- Button controll for the chrono -->
+            <div class="chrono-buttons">
+                <a href="#" title="Start" class="btn chrono-button chrono-start" onclick="chrono_start();">Start</a>
+                <a href="#" title="Cancel" class="btn chrono-button chrono-cancel" onclick="chrono_stop();">Cancel</a>
+            </div>
+
+        </div>
+
+        <!-- Task list to keep track of what you have done and what left to do -->
+<!--         <div class="task">
+            <input type="text" name="new_task" placeholder="Do stuff ..."> <a href="#" title="Add item" class="btn task-add">add</a>
+            <ul class="task-list">
+                <li class="task-item task-done">Task 1</li> <input type="checkbox"> <a href="" title="" class="btn task-remove">remove</a>
+                <li class="task-item">Task 2</li> <input type="checkbox"> <a href="" title="" class="btn task-remove">remove</a>
+            </ul>
+        </div> -->
+
+
+        <!-- Control for more customisation -->
+<!--         <a href="#" title="Show controls" class="btn-main">Show controls</a>
+        <div class="controls">
+            <input type="number" name="rush" value="25"> <p>rush length (min)</p>
+            <input type="number" name="pause" value="5"> <p>pause length (min)</p>
+            <input type="number" name="break" value="20"> <p>break length (min)</p>
+            <input type="number" name="steps" value="4"> <p>number length (min)</p>
+        </div> -->
+
+        <div class="debug">
+            <a href="#" title="Start" class="btn chrono-start" onclick="debug_zero();">[DEBUG] Zero</a>
+        </div>
+    </div>
+
+
+    <!-- Todo : Credit photo : Photo by eberhard grossgasteiger from Pexels https://www.pexels.com/photo/daylight-environment-fog-foggy-629160/ -->
+</body>
+<script src="js/app.js" type="text/javascript" charset="utf-8" async defer></script>
+</html>
